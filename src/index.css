@@ -25,3 +25,35 @@ code {
     'Courier New',
     monospace;
 }
+
+.App {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-lg-8 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.yellow {
+  color: rgba(247, 219, 7, 1);
+}
+
+.red {
+  color: rgba(255, 0, 0, 1);
+}
+
+.green {
+  color: rgba(14, 43, 25, 1);
+}
