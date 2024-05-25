@@ -33,7 +33,6 @@ const SignUp = () => {
       if (!response.ok) {
         // Handle non-successful response (HTTP status code other than 200-299)
         const errorData = await response.json();
-        console.log(errorData)
         throw new Error(errorData.message);
       }
       // If the response is successful (HTTP status code 200-299), continue here
