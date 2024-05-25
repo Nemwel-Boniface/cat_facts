@@ -45,3 +45,15 @@ code {
   padding-left: 0;
   padding-right: 0;
 }
+
+.yellow {
+  color: rgba(247, 219, 7, 1);
+}
+
+.red {
+  color: rgba(255, 0, 0, 1);
+}
+
+.green {
+  color: rgba(14, 43, 25, 1);
+}
