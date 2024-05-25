@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom'
-import { signUpRequest, signUpSuccess, signUpFailure, setToken } from '../../redux/user/signUpSlice';
+import { useNavigate } from 'react-router-dom';
+import {
+  signUpRequest, signUpSuccess, signUpFailure, setToken,
+} from '../../redux/user/signUpSlice';
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -9,7 +11,7 @@ const SignUp = () => {
   const loading = useSelector((state) => state.signup.loading);
   const success = useSelector((state) => state.signup.success);
   const error = useSelector((state) => state.signup.error);
-  
+
   const [photo, setPhoto] = useState('');
   const [formData, setFormData] = useState({
     email: '',
@@ -73,6 +75,7 @@ const SignUp = () => {
       <div className="form-group">
         <label htmlFor="username">Username</label>
         <input
+          id="username"
           className="form-control"
           type="text"
           placeholder="User Name"
@@ -83,16 +86,18 @@ const SignUp = () => {
       <div className="form-group">
         <label htmlFor="email">Email address</label>
         <input
+          id="email"
           className="form-control"
           type="email"
           placeholder="your Email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-        />      
+        />
       </div>
       <div className="form-group">
         <label htmlFor="password">Password</label>
         <input
+          id="password"
           className="form-control"
           type="password"
           placeholder="Password"
@@ -103,6 +108,7 @@ const SignUp = () => {
       <div className="form-group">
         <label htmlFor="confirmPassword">Confirm Password</label>
         <input
+          id="confirmPassword"
           className="form-control"
           type="password"
           placeholder="Password confirmation"
@@ -113,6 +119,7 @@ const SignUp = () => {
       <div className="form-group">
         <label htmlFor="imageUpload">Upload Profile Picture</label>
         <input
+          id="imageUpload"
           className="form-control"
           type="file"
           accept="image/*"
@@ -121,13 +128,13 @@ const SignUp = () => {
       </div>
       <button type="submit" className="btn btn-primary btn-block py-2" disabled={loading}>Sign Up</button>
       {loading && <p className="yellow">Signing up...</p>}
-        {error && (
-          <p className="red">
-            Error:
-            {error}
-          </p>
-        )}
-        {success && <p className="green">Signup successful!</p>}
+      {error && (
+      <p className="red">
+        Error:
+        {error}
+      </p>
+      )}
+      {success && <p className="green">Signup successful!</p>}
     </form>
   );
 
@@ -152,7 +159,7 @@ const SignUp = () => {
         </div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;

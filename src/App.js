@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from "./components/home";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import SignUp from "./components/User/SignUp";
-import LogIn from "./components/User/LogIn";
+import Home from './components/home';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SignUp from './components/User/SignUp';
+import LogIn from './components/User/LogIn';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/login" element={<LogIn />} />
       </Routes>
       <Footer />
-    </div>    
+    </div>
   );
 }
 

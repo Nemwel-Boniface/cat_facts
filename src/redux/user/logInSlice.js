@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   loading: false,
   success: false,
   error: null,
   token: null,
-  isLoggedIn: false
+  isLoggedIn: false,
 };
 
 const logInSLice = createSlice({
@@ -33,8 +33,10 @@ const logInSLice = createSlice({
       state.success = false;
     },
   },
-})
+});
 
-export const { logInRequest, logInSuccess, logInFailure, logout } = logInSLice.actions;
+export const {
+  logInRequest, logInSuccess, logInFailure, logout,
+} = logInSLice.actions;
 
 export default logInSLice.reducer;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -50,6 +50,7 @@ const LogIn = () => {
       <div className="form-group">
         <label htmlFor="email">Email address</label>
         <input
+          id="email"
           className="form-control"
           type="email"
           placeholder="Your Email"
@@ -60,6 +61,7 @@ const LogIn = () => {
       <div className="form-group">
         <label htmlFor="password">Password</label>
         <input
+          id="password"
           className="form-control"
           type="password"
           placeholder="Password"
@@ -78,7 +80,7 @@ const LogIn = () => {
       )}
       {success && <p className="green">Login successful!</p>}
     </form>
-  )
+  );
 
   return (
     <main className="container-fluid px-0 my-5">
@@ -101,7 +103,7 @@ const LogIn = () => {
         </div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default LogIn
+export default LogIn;
