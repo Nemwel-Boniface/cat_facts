@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   loading: false,
   success: false,
   error: null,
   data: null,
-}
+};
 
 const catFactsSlice = createSlice({
   name: 'catfacts',
@@ -26,7 +26,7 @@ const catFactsSlice = createSlice({
       state.success = false;
     },
   },
-})
+});
 
 export const { fetchCatFacts, fetchCatFactsSuccess, fetchCatFactsFailure } = catFactsSlice.actions;
 

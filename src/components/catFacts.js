@@ -4,7 +4,7 @@ import moment from 'moment';
 
 const CatFacts = () => {
   const catFacts = useSelector((state) => state.catfacts.data);
-  
+
   return (
     <div className="container my-5">
       <h1 className="mb-4">Cat Facts</h1>
@@ -27,7 +27,7 @@ const CatFacts = () => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
-export default CatFacts
+export default CatFacts;

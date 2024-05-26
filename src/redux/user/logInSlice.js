@@ -44,7 +44,7 @@ const logInSLice = createSlice({
 });
 
 export const {
-  logInRequest, logInSuccess, logInFailure, logout, logOutFailure
+  logInRequest, logInSuccess, logInFailure, logout, logOutFailure,
 } = logInSLice.actions;
 
 export default logInSLice.reducer;
