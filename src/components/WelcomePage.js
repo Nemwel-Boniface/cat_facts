@@ -1,9 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCatFacts, fetchCatFactsSuccess, fetchCatFactsFailure } from '../redux/catfacts/catFactsSlice';
+import { useNavigate } from 'react-router-dom';
 
 const WelcomePage = () => {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const user = useSelector((state) => state.login.user);
   const { username, token, photo } = user;
   const loading = useSelector((state) => state.catfacts.loading);
@@ -28,6 +30,7 @@ const WelcomePage = () => {
 
       const catFacts = await response.json();
       dispatch(fetchCatFactsSuccess(catFacts));
+      navigate('/catfacts')
     } catch (error) {
       dispatch(fetchCatFactsFailure(error.message))
     }
