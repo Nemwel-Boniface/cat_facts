@@ -36,10 +36,11 @@ const LogIn = () => {
       }
 
       const responseData = await response.json();
-      const authToken = responseData.token;
+      const userInfo = responseData.status.data.user;
+      const authToken = userInfo.token;
       localStorage.setItem('authToken', authToken);
-      dispatch(logInSuccess(authToken));
-      navigate('/');
+      dispatch(logInSuccess(userInfo));
+      navigate('/welcome');
     } catch (error) {
       dispatch(logInFailure(error.message));
     }

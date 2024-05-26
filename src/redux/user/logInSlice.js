@@ -6,6 +6,7 @@ const initialState = {
   error: null,
   token: null,
   isLoggedIn: false,
+  user: null,
 };
 
 const logInSLice = createSlice({
@@ -20,6 +21,7 @@ const logInSLice = createSlice({
       state.loading = false;
       state.success = true;
       state.token = action.payload;
+      state.user = action.payload;
       state.isLoggedIn = true;
     },
     logInFailure: (state, action) => {
@@ -30,6 +32,7 @@ const logInSLice = createSlice({
     logout: (state) => {
       state.isLoggedIn = false;
       state.token = null;
+      state.user = null;
       state.success = false;
     },
   },
