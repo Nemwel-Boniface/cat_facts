@@ -33,13 +33,18 @@ const logInSLice = createSlice({
       state.isLoggedIn = false;
       state.token = null;
       state.user = null;
+      state.error = null;
       state.success = false;
+    },
+    logOutFailure: (state, action) => {
+      state.isLoggedIn = true;
+      state.error = action.payload;
     },
   },
 });
 
 export const {
-  logInRequest, logInSuccess, logInFailure, logout,
+  logInRequest, logInSuccess, logInFailure, logout, logOutFailure
 } = logInSLice.actions;
 
 export default logInSLice.reducer;
