@@ -10,7 +10,7 @@ const LogIn = () => {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.login.loading);
   const success = useSelector((state) => state.login.success);
-  const failure = useSelector((state) => state.login.failure);
+  const error = useSelector((state) => state.login.error);
 
   const [formData, setFormData] = useState({
     email: '',
@@ -73,10 +73,10 @@ const LogIn = () => {
       <button disabled={loading} type="submit" className="btn btn-primary btn-block py-2">Sign In</button>
 
       {loading && <p className="yellow">Logging in...</p>}
-      {failure && (
+      {error && (
       <p className="red">
         Error:
-        {failure}
+        {error}
       </p>
       )}
       {success && <p className="green">Login successful!</p>}
