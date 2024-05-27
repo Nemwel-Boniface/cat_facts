@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SignUp from './components/User/SignUp';
 import LogIn from './components/User/LogIn';
+import WelcomePage from './components/WelcomePage';
+import CatFacts from './components/catFacts';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/welcome" element={<WelcomePage />} />
+        <Route path="/catfacts" element={<CatFacts />} />
       </Routes>
       <Footer />
     </div>
