@@ -95,7 +95,9 @@ const LogIn = () => {
                   <h5 className="card-title">Pawceed to Cat Facts</h5>
                   { renderLoginForm() }
                   <p className="mt-3">
-                    Do not have an account? <Link to="/signup">Sign up here</Link>
+                    Do not have an account?
+                    {' '}
+                    <Link to="/signup">Sign up here</Link>
                   </p>
                 </div>
               </div>
