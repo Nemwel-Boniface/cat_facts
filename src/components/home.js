@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => (
   <main className="Home container my-5">
@@ -13,7 +14,8 @@ const Home = () => (
               our app provides a treasure trove of information about cats. Join us today
               and become a cat facts expert!
             </p>
-            <a href="#!" className="btn btn-primary">Get Started</a>
+            <Link className="btn btn-primary" to="/signup">Get Started</Link>
+            {/* <a href="/signup" className="btn btn-primary">Get Started</a> */}
           </header>
         </article>
       </div>

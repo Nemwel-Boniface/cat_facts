@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   logInRequest, logInSuccess, logInFailure,
 } from '../../redux/user/logInSlice';
@@ -22,7 +22,7 @@ const LogIn = () => {
     dispatch(logInRequest());
 
     try {
-      const response = await fetch('http://127.0.0.1:3000/login', {
+      const response = await fetch('https://rails-fetch-be.onrender.com/login', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -94,6 +94,9 @@ const LogIn = () => {
                 <div className="card-body">
                   <h5 className="card-title">Pawceed to Cat Facts</h5>
                   { renderLoginForm() }
+                  <p className="mt-3">
+                    Do not have an account? <Link to="/signup">Sign up here</Link>
+                  </p>
                 </div>
               </div>
               <div className="col-md-6">

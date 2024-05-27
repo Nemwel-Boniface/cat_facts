@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   signUpRequest, signUpSuccess, signUpFailure, setToken,
 } from '../../redux/user/signUpSlice';
@@ -24,7 +24,7 @@ const SignUp = () => {
     dispatch(signUpRequest());
     const upDatedFormData = { ...formData, photo: imageURL };
     try {
-      const response = await fetch('http://127.0.0.1:3000/signup', {
+      const response = await fetch('https://rails-fetch-be.onrender.com/signup', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -152,6 +152,9 @@ const SignUp = () => {
                 <div className="card-body">
                   <h5 className="card-title">Pawceed to Cat Facts</h5>
                   { signUpForm() }
+                  <p className="mt-3">
+                    Already have an account? <Link to="/login">Login here</Link>
+                  </p>
                 </div>
               </div>
             </div>
