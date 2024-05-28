@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+![screenshot](./images/logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cat Facts
 
-## Available Scripts
+Cat Facts is a React Redux application that helps practice how to handle user authentication, working with external APIs and using Redux toolkit in your application. The application consumes data from my backend API which can be found by the following URL ```https://rails-fetch-be.onrender.com/```
 
-In the project directory, you can run:
 
-### `npm start`
+Youcan have a look at the backend repository [here](https://github.com/Nemwel-Boniface/rails_fetch_be).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Enjoy!
 
-### `npm test`
+[Screencast from 28-05-2024 11:35:18 ASUBUHI.webm](https://github.com/Nemwel-Boniface/spacetravellers/assets/86318284/a4e1dfeb-889f-4e90-9fe8-ad6d6b8c8c0e)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**If you would like to have a better view of each individual feature implemented, please visit the [Pull Requests page](https://github.com/Nemwel-Boniface/cat_facts/pulls) and have a look at the closed PRs where you will be able to see what was changed at what specific point in time.**
 
-### `npm run build`
+## Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML5
+- Bootstrap
+- Javascript
+- React
+- Redux
+- API
+- Webpack
+- Linters
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To have a look at the live demo, navigate to [this](https://catfacts-nemwel.netlify.app/) page.
 
-### `npm run eject`
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In your terminal, navigate to your current directory and run this code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`git@github.com:Nemwel-Boniface/cat_facts.git`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Locate the directory in your file explorer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`cd cat_facts`
 
-## Learn More
+Install npm or if installed already using this link
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm install`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the web dev server depending on your configuration
 
-### Code Splitting
+`npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The Project should now be live on your browser. Below is what you will see when the server successfully starts.
 
-### Analyzing the Bundle Size
+![image](https://github.com/Nemwel-Boniface/spacetravellers/assets/86318284/134e8b7c-71aa-477f-9e2e-5434cd882e0c)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Testing the application
+You can choose to either create an account or optionally login with an already created user with the following credentials:
+1. email ```markd@gmail.com```
+2. password ```12345678```
 
-### Making a Progressive Web App
+To run your tests you can run:
+- `npm test` for unit tests with the React testing library & Jest
+- `npx eslint .` for all your JavaScript based linter checks
+- `npx stylelint "**/*.{css,scss}"` for all your CSS based linter checks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Authors
 
-### Advanced Configuration
+👤 **Author1**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- GitHub: [@Nemwel-Boniface ](https://github.com/Nemwel-Boniface)
+- Twitter: [@nemwel_bonie](https://twitter.com/nemwel_bonie)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nemwel-nyandoro-aa1b2620b/)
 
-### Deployment
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Feel free to check the [issues page](https://github.com/Nemwel-Boniface/cat_facts/issues).
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+
+Give a ⭐️ if you like this project!
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
