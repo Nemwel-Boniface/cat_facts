@@ -62,6 +62,10 @@ To run your tests you can run:
 - `npx eslint .` for all your JavaScript based linter checks
 - `npx stylelint "**/*.{css,scss}"` for all your CSS based linter checks
 
+## If you would like to test the application with the backend API locally:
+
+please visit [this PR](https://github.com/Nemwel-Boniface/rails_fetch_be/pull/2) page which has the required endpoints so that you can update the Login.js, SignUp.js, and Navbar.js with the required endpoints. 
+
 ## Authors
 
 👤 **Author1**
