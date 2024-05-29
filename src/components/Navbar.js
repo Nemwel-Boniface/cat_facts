@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const handleLogOut = async () => {
     try {
-      await fetch('http://127.0.0.1:3000/logout', {
+      await fetch('https://rails-fetch-be.onrender.com/logout', {
         method: 'DELETE',
         headers: {
           'content-type': 'application/json',

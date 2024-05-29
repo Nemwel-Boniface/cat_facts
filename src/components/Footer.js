@@ -18,7 +18,13 @@ const Footer = () => (
               <a href="https://github.com/Nemwel-Boniface/cat_facts" className="text-dark" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
             </li>
             <li>
-              <a href="https://your-live-demo-url.com" className="text-dark" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://catfacts-nemwel.netlify.app/" className="text-dark" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </li>
+            <li>
+              <a href="https://github.com/Nemwel-Boniface/rails_fetch_be/" className="text-dark" target="_blank" rel="noopener noreferrer">Backend API GitHub</a>
+            </li>
+            <li>
+              <a href="https://rails-fetch-be.onrender.com/" className="text-dark" target="_blank" rel="noopener noreferrer">Backend Live Demo</a>
             </li>
           </ul>
         </div>
@@ -37,7 +43,7 @@ const Footer = () => (
               </span>
             </li>
             <li>
-              <a href="mailto:nemwelnyandoro20@gmail.com" className="text-dark">nemwel@gmail.com.com</a>
+              <a href="mailto:nemwelnyandoro20@gmail.com" className="text-dark">nemwel@gmail.com</a>
             </li>
           </ul>
         </div>
